@@ -1,0 +1,7 @@
+services:
+  jwt-admission-test-backend:
+    image: jwt-admission-test:latest
+    container_name: jwt-admission-test
+    restart: no
+    ports:
+      - 8080:8080
