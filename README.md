@@ -1,4 +1,5 @@
-# Prueba tecnica Franco Arraño
+# Prueba tecnica Paolo Mezzano
+
 Prerequisitos:
 
 * Java 17.

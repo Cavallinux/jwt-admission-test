@@ -26,7 +26,8 @@ import lombok.Setter;
 @MappedSuperclass
 @EntityListeners(AuditingEntityListener.class)
 public abstract class AutoincrementEntity implements Serializable {
-
+    private static final long serialVersionUID = -5620973387076656156L;
+    
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -39,5 +40,4 @@ public abstract class AutoincrementEntity implements Serializable {
     @LastModifiedDate
     @Column(name = "last_modified_date")
     private LocalDateTime lastModifiedDate;
-
 }

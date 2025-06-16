@@ -6,12 +6,11 @@ import lombok.Builder;
 import lombok.Data;
 
 /**
- * Representacion del json de error requerido en la prueba
+ * Representacion del mensaje de error a entregar.
  */
 @Data
 @Builder
 public class ErrorMessageDTO implements Serializable {
-
+    private static final long serialVersionUID = -700871970550452046L;
     private String mensaje;
-
 }

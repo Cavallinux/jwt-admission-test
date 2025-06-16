@@ -12,7 +12,7 @@ import lombok.Data;
 
 @Data
 public class CustomUserDetails implements UserDetails {
-
+    private static final long serialVersionUID = -6330279555425606498L;
     private String username;
     private List<GrantedAuthority> authorities;
     private String password;

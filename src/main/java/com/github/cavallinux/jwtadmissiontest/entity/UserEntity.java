@@ -16,7 +16,7 @@ import lombok.Setter;
 @Getter
 @Table(name="users")
 public class UserEntity extends AutoincrementEntity {
-
+    private static final long serialVersionUID = 2057883949344548687L;
     @Column(unique = true)
     private String correo;
     @Column
@@ -29,5 +29,4 @@ public class UserEntity extends AutoincrementEntity {
     private LocalDateTime ultimoLogin;
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
     private List<PhoneEntity> telefonos;
-
 }

@@ -11,7 +11,7 @@ import lombok.Setter;
 @Getter
 @Table(name="phones")
 public class PhoneEntity extends AutoincrementEntity {
-
+    private static final long serialVersionUID = 1134879045295649731L;
     @Column
     private String numero;
     @Column

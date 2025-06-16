@@ -12,8 +12,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Builder
 public class LoginDTO implements Serializable {
-
+    private static final long serialVersionUID = -2433318936243114515L;
     private String correo;
     private String contrasena;
-
 }
